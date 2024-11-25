@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4de149d81329f68fedc56011ef882d81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4de149d81329f68fedc56011ef882d81" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4de149d81329f68fedc56011ef882d81 = L.map(
+                "map_4de149d81329f68fedc56011ef882d81",
+                {
+                    center: [28.6139, 77.209],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_912e5b16d4045d4644585cf82bf0bc82 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_912e5b16d4045d4644585cf82bf0bc82.addTo(map_4de149d81329f68fedc56011ef882d81);
+        
+    
+            var marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_9091a81af3cc1996880566932f87b314 = L.marker(
+                [28.7993, 77.1555],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_e9aee87be03a8803b0f423862b07ea3f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_020e0ba16e10afff7adeafa208578c05 = $(`<div id="html_020e0ba16e10afff7adeafa208578c05" style="width: 100.0%; height: 100.0%;">Alipur: 150.58 µg/m³</div>`)[0];
+                popup_e9aee87be03a8803b0f423862b07ea3f.setContent(html_020e0ba16e10afff7adeafa208578c05);
+            
+        
+
+        marker_9091a81af3cc1996880566932f87b314.bindPopup(popup_e9aee87be03a8803b0f423862b07ea3f)
+        ;
+
+        
+    
+    
+            var marker_d0bbaf1ce5d1e1180bed7144a7661f8c = L.marker(
+                [28.6464, 77.315],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b16198c06e350de7cc16889cd98ad1bc = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d66889b171c9ebae78b464cc7103762f = $(`<div id="html_d66889b171c9ebae78b464cc7103762f" style="width: 100.0%; height: 100.0%;">Anand Vihar: 166.01 µg/m³</div>`)[0];
+                popup_b16198c06e350de7cc16889cd98ad1bc.setContent(html_d66889b171c9ebae78b464cc7103762f);
+            
+        
+
+        marker_d0bbaf1ce5d1e1180bed7144a7661f8c.bindPopup(popup_b16198c06e350de7cc16889cd98ad1bc)
+        ;
+
+        
+    
+    
+            var marker_29d728f4fbdc0e6c5edf13bc35a78971 = L.marker(
+                [28.6883, 77.1715],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_4837aa574e4d7211fe1af78aca8e66e2 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_09f21f3bd10f1eb26278109a2ad59bfc = $(`<div id="html_09f21f3bd10f1eb26278109a2ad59bfc" style="width: 100.0%; height: 100.0%;">Ashok Vihar: 154.17 µg/m³</div>`)[0];
+                popup_4837aa574e4d7211fe1af78aca8e66e2.setContent(html_09f21f3bd10f1eb26278109a2ad59bfc);
+            
+        
+
+        marker_29d728f4fbdc0e6c5edf13bc35a78971.bindPopup(popup_4837aa574e4d7211fe1af78aca8e66e2)
+        ;
+
+        
+    
+    
+            var marker_aa31174e7df11cd3dd4c66b5f2765558 = L.marker(
+                [28.4686, 77.1388],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_ed78167cbe6d5ebeef63b9ecee961833 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cabb3d198a4532ef48f0f73235c7b167 = $(`<div id="html_cabb3d198a4532ef48f0f73235c7b167" style="width: 100.0%; height: 100.0%;">Aya Nagar: 141.09 µg/m³</div>`)[0];
+                popup_ed78167cbe6d5ebeef63b9ecee961833.setContent(html_cabb3d198a4532ef48f0f73235c7b167);
+            
+        
+
+        marker_aa31174e7df11cd3dd4c66b5f2765558.bindPopup(popup_ed78167cbe6d5ebeef63b9ecee961833)
+        ;
+
+        
+    
+    
+            var marker_e9440a4ec3916617295678b540f878cc = L.marker(
+                [28.8113, 77.0469],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b47d5ee486ad37c506efd704fb2bc15c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c16e0ad048c91d87e63203a1a8af164f = $(`<div id="html_c16e0ad048c91d87e63203a1a8af164f" style="width: 100.0%; height: 100.0%;">Bawana: 176.13 µg/m³</div>`)[0];
+                popup_b47d5ee486ad37c506efd704fb2bc15c.setContent(html_c16e0ad048c91d87e63203a1a8af164f);
+            
+        
+
+        marker_e9440a4ec3916617295678b540f878cc.bindPopup(popup_b47d5ee486ad37c506efd704fb2bc15c)
+        ;
+
+        
+    
+    
+            var marker_cf1f340ce248d6986400fd6e1e01ce57 = L.marker(
+                [28.7301, 77.2036],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b1e465d6c98894400a227b9de9561f7d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2b9801ba116b3b584e72fd156b1138d8 = $(`<div id="html_2b9801ba116b3b584e72fd156b1138d8" style="width: 100.0%; height: 100.0%;">Burari Crossing: 160.39 µg/m³</div>`)[0];
+                popup_b1e465d6c98894400a227b9de9561f7d.setContent(html_2b9801ba116b3b584e72fd156b1138d8);
+            
+        
+
+        marker_cf1f340ce248d6986400fd6e1e01ce57.bindPopup(popup_b1e465d6c98894400a227b9de9561f7d)
+        ;
+
+        
+    
+    
+            var marker_7760dd2e664bf09a11bf6eff283fde0d = L.marker(
+                [28.5646, 77.2741],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_f3fca0a468d39526bab47d4cde8c676e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b18d1a747a4ccd1fec3c382792d2fdee = $(`<div id="html_b18d1a747a4ccd1fec3c382792d2fdee" style="width: 100.0%; height: 100.0%;">CRRI Mathura Road: 127.85 µg/m³</div>`)[0];
+                popup_f3fca0a468d39526bab47d4cde8c676e.setContent(html_b18d1a747a4ccd1fec3c382792d2fdee);
+            
+        
+
+        marker_7760dd2e664bf09a11bf6eff283fde0d.bindPopup(popup_f3fca0a468d39526bab47d4cde8c676e)
+        ;
+
+        
+    
+    
+            var marker_513d2e14e6856e2c550621e868daa52c = L.marker(
+                [28.7492, 77.1175],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_4e662065d029815abea873d91d60bbeb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f9b3bc852450cbe42194dd0edff1a546 = $(`<div id="html_f9b3bc852450cbe42194dd0edff1a546" style="width: 100.0%; height: 100.0%;">DTU: 70.34 µg/m³</div>`)[0];
+                popup_4e662065d029815abea873d91d60bbeb.setContent(html_f9b3bc852450cbe42194dd0edff1a546);
+            
+        
+
+        marker_513d2e14e6856e2c550621e868daa52c.bindPopup(popup_4e662065d029815abea873d91d60bbeb)
+        ;
+
+        
+    
+    
+            var marker_a900f043a775ce618da70b09a2fd388e = L.marker(
+                [28.4785, 77.2396],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_87f9fa6f46469e7d674142320dca4bd7 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ab4f5c230210d95199a731e40d2c5db6 = $(`<div id="html_ab4f5c230210d95199a731e40d2c5db6" style="width: 100.0%; height: 100.0%;">Dr. Karni Singh Shooting Range: 141.62 µg/m³</div>`)[0];
+                popup_87f9fa6f46469e7d674142320dca4bd7.setContent(html_ab4f5c230210d95199a731e40d2c5db6);
+            
+        
+
+        marker_a900f043a775ce618da70b09a2fd388e.bindPopup(popup_87f9fa6f46469e7d674142320dca4bd7)
+        ;
+
+        
+    
+    
+            var marker_1ca4215f17cadddcdaa7543dd7eb2bb9 = L.marker(
+                [28.5646, 77.0556],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_d5982648b9747e2759e7da9abc41a598 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8a1e85a929bec310645a59fcf4c0d8d7 = $(`<div id="html_8a1e85a929bec310645a59fcf4c0d8d7" style="width: 100.0%; height: 100.0%;">Dwarka-Sector 8: 154.17 µg/m³</div>`)[0];
+                popup_d5982648b9747e2759e7da9abc41a598.setContent(html_8a1e85a929bec310645a59fcf4c0d8d7);
+            
+        
+
+        marker_1ca4215f17cadddcdaa7543dd7eb2bb9.bindPopup(popup_d5982648b9747e2759e7da9abc41a598)
+        ;
+
+        
+    
+    
+            var marker_ee30e29acb96bbaa3324502b1448bbe2 = L.marker(
+                [28.5562, 77.1],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_0941d9b229bd2c710b430732ae10cdf9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_29533c332d4356f146adb481e89ec8ab = $(`<div id="html_29533c332d4356f146adb481e89ec8ab" style="width: 100.0%; height: 100.0%;">IGI Airport (T3): 139.71 µg/m³</div>`)[0];
+                popup_0941d9b229bd2c710b430732ae10cdf9.setContent(html_29533c332d4356f146adb481e89ec8ab);
+            
+        
+
+        marker_ee30e29acb96bbaa3324502b1448bbe2.bindPopup(popup_0941d9b229bd2c710b430732ae10cdf9)
+        ;
+
+        
+    
+    
+            var marker_d48f1da6db3675b0f20d07f0ac323fa5 = L.marker(
+                [28.6288, 77.2425],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_ac3c0ea6f8daa0a2e7e3c8b8fc34a922 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e67117b025c423c94a37d0df1555b1b8 = $(`<div id="html_e67117b025c423c94a37d0df1555b1b8" style="width: 100.0%; height: 100.0%;">ITO: 129.53 µg/m³</div>`)[0];
+                popup_ac3c0ea6f8daa0a2e7e3c8b8fc34a922.setContent(html_e67117b025c423c94a37d0df1555b1b8);
+            
+        
+
+        marker_d48f1da6db3675b0f20d07f0ac323fa5.bindPopup(popup_ac3c0ea6f8daa0a2e7e3c8b8fc34a922)
+        ;
+
+        
+    
+    
+            var marker_64579ad182c1a50e634e54d2d1fcce0d = L.marker(
+                [28.734, 77.1804],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b8d32a5382a5a529554b5886d17aa908 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_937668eb84c09295e786496022b82af9 = $(`<div id="html_937668eb84c09295e786496022b82af9" style="width: 100.0%; height: 100.0%;">Jahangirpuri: 171.04 µg/m³</div>`)[0];
+                popup_b8d32a5382a5a529554b5886d17aa908.setContent(html_937668eb84c09295e786496022b82af9);
+            
+        
+
+        marker_64579ad182c1a50e634e54d2d1fcce0d.bindPopup(popup_b8d32a5382a5a529554b5886d17aa908)
+        ;
+
+        
+    
+    
+            var marker_4be948d4687dba9db0c2cb13f462044b = L.marker(
+                [28.5828, 77.2341],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_32fc3e571017a1af6c4f839a10abbc5f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_762412d887032e4e9e267235d897791b = $(`<div id="html_762412d887032e4e9e267235d897791b" style="width: 100.0%; height: 100.0%;">Jawaharlal Nehru Stadium: 102.75 µg/m³</div>`)[0];
+                popup_32fc3e571017a1af6c4f839a10abbc5f.setContent(html_762412d887032e4e9e267235d897791b);
+            
+        
+
+        marker_4be948d4687dba9db0c2cb13f462044b.bindPopup(popup_32fc3e571017a1af6c4f839a10abbc5f)
+        ;
+
+        
+    
+    
+            var marker_6f0f732e66c6ebf40a292914e5ac754b = L.marker(
+                [28.5931, 77.2279],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_a761b24cf05b2f88204e3f4a10dee5c4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4e499ead78c9f743dfe9990701b26bf6 = $(`<div id="html_4e499ead78c9f743dfe9990701b26bf6" style="width: 100.0%; height: 100.0%;">Lodhi Road: 76.46 µg/m³</div>`)[0];
+                popup_a761b24cf05b2f88204e3f4a10dee5c4.setContent(html_4e499ead78c9f743dfe9990701b26bf6);
+            
+        
+
+        marker_6f0f732e66c6ebf40a292914e5ac754b.bindPopup(popup_a761b24cf05b2f88204e3f4a10dee5c4)
+        ;
+
+        
+    
+    
+            var marker_5e162ebc3a3332f1e26ffd36d0940b6d = L.marker(
+                [28.6289, 77.2006],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_5494bec0fa9b29b4a3e3908589e0f6ca = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f3cbdb4af64f139d9d1b6d9c096f19fd = $(`<div id="html_f3cbdb4af64f139d9d1b6d9c096f19fd" style="width: 100.0%; height: 100.0%;">Mandir Marg: 147.48 µg/m³</div>`)[0];
+                popup_5494bec0fa9b29b4a3e3908589e0f6ca.setContent(html_f3cbdb4af64f139d9d1b6d9c096f19fd);
+            
+        
+
+        marker_5e162ebc3a3332f1e26ffd36d0940b6d.bindPopup(popup_5494bec0fa9b29b4a3e3908589e0f6ca)
+        ;
+
+        
+    
+    
+            var marker_074ae78896c4a3cc172f2cd4e7913226 = L.marker(
+                [28.6764, 77.0316],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_7f9f592b514e410cb012860f2a2f9012 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_198582c06b018be78a464f5718e96669 = $(`<div id="html_198582c06b018be78a464f5718e96669" style="width: 100.0%; height: 100.0%;">Mundka: 160.58 µg/m³</div>`)[0];
+                popup_7f9f592b514e410cb012860f2a2f9012.setContent(html_198582c06b018be78a464f5718e96669);
+            
+        
+
+        marker_074ae78896c4a3cc172f2cd4e7913226.bindPopup(popup_7f9f592b514e410cb012860f2a2f9012)
+        ;
+
+        
+    
+    
+            var marker_30ad1203d3a2f536bd317cc061bd8340 = L.marker(
+                [28.6084, 77.0364],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_86933b34ba8f947d17b9db16be2950a5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_af4c37a750e7ec212e8828d06f1de078 = $(`<div id="html_af4c37a750e7ec212e8828d06f1de078" style="width: 100.0%; height: 100.0%;">NSIT Dwarka: 139.78 µg/m³</div>`)[0];
+                popup_86933b34ba8f947d17b9db16be2950a5.setContent(html_af4c37a750e7ec212e8828d06f1de078);
+            
+        
+
+        marker_30ad1203d3a2f536bd317cc061bd8340.bindPopup(popup_86933b34ba8f947d17b9db16be2950a5)
+        ;
+
+        
+    
+    
+            var marker_33260f5c319b1532d1783ec057996650 = L.marker(
+                [28.6091, 76.9796],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_bb78a9eaba2d65670ccfe62731844475 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d0736f16816e8912d458332adedabcbc = $(`<div id="html_d0736f16816e8912d458332adedabcbc" style="width: 100.0%; height: 100.0%;">Najafgarh: 148.24 µg/m³</div>`)[0];
+                popup_bb78a9eaba2d65670ccfe62731844475.setContent(html_d0736f16816e8912d458332adedabcbc);
+            
+        
+
+        marker_33260f5c319b1532d1783ec057996650.bindPopup(popup_bb78a9eaba2d65670ccfe62731844475)
+        ;
+
+        
+    
+    
+            var marker_103c5ecc52e6a134e84b5a1ecb919204 = L.marker(
+                [28.8377, 77.0931],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_0e711ed6f9265ab218ed144fc4854cd6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7b83d152767b81ad8d81a954bae29aa2 = $(`<div id="html_7b83d152767b81ad8d81a954bae29aa2" style="width: 100.0%; height: 100.0%;">Narela: 127.4 µg/m³</div>`)[0];
+                popup_0e711ed6f9265ab218ed144fc4854cd6.setContent(html_7b83d152767b81ad8d81a954bae29aa2);
+            
+        
+
+        marker_103c5ecc52e6a134e84b5a1ecb919204.bindPopup(popup_0e711ed6f9265ab218ed144fc4854cd6)
+        ;
+
+        
+    
+    
+            var marker_e06cd0213f0218ddbac5a6abfc56a755 = L.marker(
+                [28.5634, 77.2486],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_e9e96ad3c4a4116cc8e4a7fffade8fb0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ba638b466009adb29fa18921f4029483 = $(`<div id="html_ba638b466009adb29fa18921f4029483" style="width: 100.0%; height: 100.0%;">Nehru Nagar: 148.29 µg/m³</div>`)[0];
+                popup_e9e96ad3c4a4116cc8e4a7fffade8fb0.setContent(html_ba638b466009adb29fa18921f4029483);
+            
+        
+
+        marker_e06cd0213f0218ddbac5a6abfc56a755.bindPopup(popup_e9e96ad3c4a4116cc8e4a7fffade8fb0)
+        ;
+
+        
+    
+    
+            var marker_4e2c7b713e23bca69c4e2244b76b7caa = L.marker(
+                [28.5352, 77.279],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_92cafcaf9e3ae46a906891d8fb379eec = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2849e7e153ca067204542f6f498bd8ae = $(`<div id="html_2849e7e153ca067204542f6f498bd8ae" style="width: 100.0%; height: 100.0%;">Okhla Phase-2: 127.04 µg/m³</div>`)[0];
+                popup_92cafcaf9e3ae46a906891d8fb379eec.setContent(html_2849e7e153ca067204542f6f498bd8ae);
+            
+        
+
+        marker_4e2c7b713e23bca69c4e2244b76b7caa.bindPopup(popup_92cafcaf9e3ae46a906891d8fb379eec)
+        ;
+
+        
+    
+    
+            var marker_3e9b74ccc9241292cd91d0809bdd9299 = L.marker(
+                [28.629, 77.2903],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_79a632d55167938b2196ad93eec12fc5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_64982002a338d3b42acf2778d2880f7f = $(`<div id="html_64982002a338d3b42acf2778d2880f7f" style="width: 100.0%; height: 100.0%;">Patparganj: 144.96 µg/m³</div>`)[0];
+                popup_79a632d55167938b2196ad93eec12fc5.setContent(html_64982002a338d3b42acf2778d2880f7f);
+            
+        
+
+        marker_3e9b74ccc9241292cd91d0809bdd9299.bindPopup(popup_79a632d55167938b2196ad93eec12fc5)
+        ;
+
+        
+    
+    
+            var marker_ff065b2c7797f522d01a9e1cf7586fc3 = L.marker(
+                [28.6758, 77.1304],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_07aea9f3d85fb8cd22e5847425e22a89 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6e4de578cc837749760949944f9674e7 = $(`<div id="html_6e4de578cc837749760949944f9674e7" style="width: 100.0%; height: 100.0%;">Punjabi Bagh: 107.25 µg/m³</div>`)[0];
+                popup_07aea9f3d85fb8cd22e5847425e22a89.setContent(html_6e4de578cc837749760949944f9674e7);
+            
+        
+
+        marker_ff065b2c7797f522d01a9e1cf7586fc3.bindPopup(popup_07aea9f3d85fb8cd22e5847425e22a89)
+        ;
+
+        
+    
+    
+            var marker_f28dcfcb44dde8e13a1682aac88c0142 = L.marker(
+                [28.6399, 77.1804],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_de9a3d5502ea7362b83b9585d8adfb39 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_94fd82ab1d277c81b1ab8c8fc796758c = $(`<div id="html_94fd82ab1d277c81b1ab8c8fc796758c" style="width: 100.0%; height: 100.0%;">Pusa: 118.6 µg/m³</div>`)[0];
+                popup_de9a3d5502ea7362b83b9585d8adfb39.setContent(html_94fd82ab1d277c81b1ab8c8fc796758c);
+            
+        
+
+        marker_f28dcfcb44dde8e13a1682aac88c0142.bindPopup(popup_de9a3d5502ea7362b83b9585d8adfb39)
+        ;
+
+        
+    
+    
+            var marker_2ce976f2e7fbbd168fcfc3f5c40628c6 = L.marker(
+                [28.5626, 77.174],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_80966733871f9bf0cac8e1d711107599 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_17132fa8f8d57168297ac8565f29bba9 = $(`<div id="html_17132fa8f8d57168297ac8565f29bba9" style="width: 100.0%; height: 100.0%;">R K Puram: 196.17 µg/m³</div>`)[0];
+                popup_80966733871f9bf0cac8e1d711107599.setContent(html_17132fa8f8d57168297ac8565f29bba9);
+            
+        
+
+        marker_2ce976f2e7fbbd168fcfc3f5c40628c6.bindPopup(popup_80966733871f9bf0cac8e1d711107599)
+        ;
+
+        
+    
+    
+            var marker_ff55b6e4137cb9a1a69cef5cff8da28c = L.marker(
+                [28.736, 77.1096],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_8cffcb4b6b04ee33474618bc02e8e79c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5eb32b0ab5fd0340d1706202c1448a17 = $(`<div id="html_5eb32b0ab5fd0340d1706202c1448a17" style="width: 100.0%; height: 100.0%;">Rohini: 165.96 µg/m³</div>`)[0];
+                popup_8cffcb4b6b04ee33474618bc02e8e79c.setContent(html_5eb32b0ab5fd0340d1706202c1448a17);
+            
+        
+
+        marker_ff55b6e4137cb9a1a69cef5cff8da28c.bindPopup(popup_8cffcb4b6b04ee33474618bc02e8e79c)
+        ;
+
+        
+    
+    
+            var marker_e5a0db8758c3c4f3888f2bbf2e5ed3b1 = L.marker(
+                [28.6462, 77.1572],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b308287772b0667c2b3a660b2b723fb1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_962ed3b6c79d7588915d5a40cad683d9 = $(`<div id="html_962ed3b6c79d7588915d5a40cad683d9" style="width: 100.0%; height: 100.0%;">Shadipur: 129.19 µg/m³</div>`)[0];
+                popup_b308287772b0667c2b3a660b2b723fb1.setContent(html_962ed3b6c79d7588915d5a40cad683d9);
+            
+        
+
+        marker_e5a0db8758c3c4f3888f2bbf2e5ed3b1.bindPopup(popup_b308287772b0667c2b3a660b2b723fb1)
+        ;
+
+        
+    
+    
+            var marker_5cc21a7e4f057fc2bbb66af09e6dbd54 = L.marker(
+                [28.5537, 77.2094],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_e55834f4932c79472963c8fcaf8b1c93 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_973d1b7a4f1f9a3575a051cb8911f0f4 = $(`<div id="html_973d1b7a4f1f9a3575a051cb8911f0f4" style="width: 100.0%; height: 100.0%;">Sirifort: 137.07 µg/m³</div>`)[0];
+                popup_e55834f4932c79472963c8fcaf8b1c93.setContent(html_973d1b7a4f1f9a3575a051cb8911f0f4);
+            
+        
+
+        marker_5cc21a7e4f057fc2bbb66af09e6dbd54.bindPopup(popup_e55834f4932c79472963c8fcaf8b1c93)
+        ;
+
+        
+    
+    
+            var marker_371238982131ec31fba358ea1f2c8633 = L.marker(
+                [28.7303, 77.2471],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_bbf5b043a0a14730d8eba5df954428f6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a2fa27a2e56b1500c96bbda699f2b84b = $(`<div id="html_a2fa27a2e56b1500c96bbda699f2b84b" style="width: 100.0%; height: 100.0%;">Sonia Vihar: 159.75 µg/m³</div>`)[0];
+                popup_bbf5b043a0a14730d8eba5df954428f6.setContent(html_a2fa27a2e56b1500c96bbda699f2b84b);
+            
+        
+
+        marker_371238982131ec31fba358ea1f2c8633.bindPopup(popup_bbf5b043a0a14730d8eba5df954428f6)
+        ;
+
+        
+    
+    
+            var marker_86647a82d8d6388cadb7f0ff8287fc20 = L.marker(
+                [28.5396, 77.1945],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_acce696eeea04ca47262926c88cf97a1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6abe4ca75e93a63f4a79ae0cc05b4d50 = $(`<div id="html_6abe4ca75e93a63f4a79ae0cc05b4d50" style="width: 100.0%; height: 100.0%;">Sri Aurobindo Marg: 130.64 µg/m³</div>`)[0];
+                popup_acce696eeea04ca47262926c88cf97a1.setContent(html_6abe4ca75e93a63f4a79ae0cc05b4d50);
+            
+        
+
+        marker_86647a82d8d6388cadb7f0ff8287fc20.bindPopup(popup_acce696eeea04ca47262926c88cf97a1)
+        ;
+
+        
+    
+    
+            var marker_5899f18031ec22b7317cbfd89b748d05 = L.marker(
+                [28.6766, 77.3044],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_b67f48ad766185d55e20efe3792a4101 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5a1a8a0e566f046fd1768fcfaf274c34 = $(`<div id="html_5a1a8a0e566f046fd1768fcfaf274c34" style="width: 100.0%; height: 100.0%;">Vivek Vihar: 162.58 µg/m³</div>`)[0];
+                popup_b67f48ad766185d55e20efe3792a4101.setContent(html_5a1a8a0e566f046fd1768fcfaf274c34);
+            
+        
+
+        marker_5899f18031ec22b7317cbfd89b748d05.bindPopup(popup_b67f48ad766185d55e20efe3792a4101)
+        ;
+
+        
+    
+    
+            var marker_0e3d9824f129e0228c14cb78edca6d67 = L.marker(
+                [28.7044, 77.1725],
+                {}
+            ).addTo(marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1);
+        
+    
+        var popup_625521ee7954e468f77d13f3b1818805 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_557b8bcc8e8f397700cdf41212c520f3 = $(`<div id="html_557b8bcc8e8f397700cdf41212c520f3" style="width: 100.0%; height: 100.0%;">Wazirpur: 150.54 µg/m³</div>`)[0];
+                popup_625521ee7954e468f77d13f3b1818805.setContent(html_557b8bcc8e8f397700cdf41212c520f3);
+            
+        
+
+        marker_0e3d9824f129e0228c14cb78edca6d67.bindPopup(popup_625521ee7954e468f77d13f3b1818805)
+        ;
+
+        
+    
+    
+            marker_cluster_2977c2fe8bbf7d30f803c01840fef5c1.addTo(map_4de149d81329f68fedc56011ef882d81);
+        
+</script>
+</html>
